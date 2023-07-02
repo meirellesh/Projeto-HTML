@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Henrique Meirelles">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>  
-    <meta property="og:title" content="SoulNews">  
-    <meta property="og:type" content="article">      
-    <meta property="og:url" content="https://meirellesh.github.io/ProjetoHTML-HM/contato.html">
-    <meta property="og:description" content="Noticias ficticias, Criadas por IA">
-    <meta property="og:image" content="IA-logo.png">
-    <link rel="icon" type="image/x-icon" href="IA-logo.png">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div>
-            <center><h1><img src ="IA-logo.png"> &nbsp; SoulNews</h1></center>
-        </div>
-        <div>
-            <nav>
-                <h3>
-                    <center>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Henrique Meirelles" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contato</title>
+        <meta property="og:title" content="SoulNews" />
+        <meta property="og:type" content="article" />
+        <meta
+            property="og:url"
+            content="https://meirellesh.github.io/ProjetoHTML-HM/contato.html"
+        />
+        <meta
+            property="og:description"
+            content="Noticias ficticias, Criadas por IA"
+        />
+        <meta property="og:image" content="IA-logo.png" />
+        <link rel="icon" type="image/x-icon" href="IA-logo.png" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <center>
+                    <h1><img src="IA-logo.png" /> &nbsp; SoulNews</h1>
+                </center>
+            </div>
+            <div>
+                <nav>
+                    <h3>
                         <center>
-                            <a
-                                href="index.html#noticias-locais"
+                            <a href="index.html#noticias-locais"
                                 >Notícias Locais</a
                             >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
                                 href="index.html#politica"
@@ -45,63 +52,117 @@
                                 >Visualizações</a
                             >
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                href="index.html#videos"
+                                >Assista em vídeo</a
+                            >
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
                                 href="contato.html"
                                 >Contato</a
                             >
                         </center>
-                    </center>
-                </h3>
-                <hr />
-            </nav>
-        </div>
-    </header>
-    <main>
-        <form>
-            <fieldset>
-            <legend>Informações Pessoais</legend>
-            <label for="nomesobrenome">Nome e sobrenome</label><br>
-            <input type="text" id="nomesobrenome" class="input-padrao" required>
-            <br>
-            <label for="email">Email</label><br>
-            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
-            <br>
-            <label for="telefone">Telefone</label><br>
-            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
-            <br><br>
-        </fieldset>
-        <br>
-            <fieldset>
-                Qual o assunto do contato?<br><br>
-                <select>
-                    <option>Dúvidas</option>
-                    <option>Elogios</option>
-                    <option>Reclamações</option>
-                    <option>Trabalhe Conosco</option>
-                    <option>Novas notícias</option>
-                </select>
-                <br>
-                <br>
-            
+                    </h3>
+                    <hr />
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <label for="nomesobrenome">Nome e sobrenome</label><br />
+                    <input
+                        type="text"
+                        id="nomesobrenome"
+                        class="input-padrao"
+                        required
+                    />
+                    <br />
+                    <label for="email">Email</label><br />
+                    <input
+                        type="email"
+                        id="email"
+                        class="input-padrao"
+                        required
+                        placeholder="seuemail@dominio.com"
+                    />
+                    <br />
+                    <label for="telefone">Telefone</label><br />
+                    <input
+                        type="tel"
+                        id="telefone"
+                        class="input-padrao"
+                        required
+                        placeholder="(XX) XXXXX-XXXX"
+                    />
+                    <br /><br />
+                </fieldset>
+                <br />
+                <fieldset>
+                    Qual o assunto do contato?<br /><br />
+                    <select>
+                        <option>Dúvidas</option>
+                        <option>Elogios</option>
+                        <option>Reclamações</option>
+                        <option>Trabalhe Conosco</option>
+                        <option>Novas notícias</option>
+                    </select>
+                    <br />
+                    <br />
 
-            <label for="mensagem">Mensagem:</label><br>
-            <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
-            <br>
-        </fieldset>
-            <fieldset>
-                <legend>Como prefere o nosso contato?</legend>
-                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
-                
-                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
-                
-                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
-            </fieldset>
+                    <label for="mensagem">Mensagem:</label><br />
+                    <textarea
+                        cols="70"
+                        rows="10"
+                        id="mensagem"
+                        class="input-padrao"
+                        required
+                    ></textarea>
+                    <br />
+                </fieldset>
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email"
+                        ><input
+                            type="radio"
+                            name="contato"
+                            value="email"
+                            id="radio-email"
+                        />
+                        Email</label
+                    >
 
-            <br>
+                    <label for="radio-telefone"
+                        ><input
+                            type="radio"
+                            name="contato"
+                            value="telefone"
+                            id="radio-telefone"
+                        />
+                        Telefone</label
+                    >
 
-            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
-            <br><br>
-            <input type="submit" value="Enviar formulário" class="enviar">
-        </form>
+                    <label for="radio-whatsapp"
+                        ><input
+                            type="radio"
+                            name="contato"
+                            value="whatsapp"
+                            id="radio-whatsapp"
+                            checked
+                        />
+                        WhatsApp</label
+                    >
+                </fieldset>
+
+                <br />
+
+                <label class="checkbox"
+                    ><input type="checkbox" checked />Gostaria de receber nossas
+                    novidades por email?</label
+                >
+                <br /><br />
+                <input type="submit" value="Enviar formulário" class="enviar" />
+            </form>
+        </main>
         <footer>
             <section id="direitos-autorais">
                 <h4>
@@ -136,5 +197,5 @@
                 /></a>
             </section>
         </footer>
-</body>
+    </body>
 </html>
